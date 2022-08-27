@@ -13,9 +13,6 @@ const App = () => {
   const handleSubmit = async (searchTerm) => {
     const response = await youtube.get("search", {
       params: {
-        part: "snippet",
-        maxResults: 5,
-        key: "AIzaSyAp2nTP3v_mywIHPXw6WE_sPYn2qQYXOsY",
         q: searchTerm,
       },
     });
